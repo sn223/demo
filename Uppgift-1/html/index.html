@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <div id="headertext">
+        <h1>Fråga 1</h1>
+
+    </div>
+</head>
+
+<body>
+
+    <nav class="huvudmeny">
+        <ul class="lista1">
+
+            <li><a href="index.html">Fråga 1</a></li>
+            <li><a href="fråga2.html">Fråga 2</a></li>
+            <li><a href="fråga3.html">Fråga 3</a></li>
+
+        </ul>
+    </nav>
+
+    <h3 class="text1">Datakommunikation och webbadresser</h3>
+    <p class="text1">a. Vad avses med termerna klient och server?</p>
+    <p class="text1">b. Beskriv vad var och en av protokollen TCP och IP gör på sändande och mottagande sida.</p>
+    <p class="text1"> Beskriv de delar som följande url består av:
+        <br>
+        http://webbteknik.abc.se:8082/kurs1/uppg/u1.html#fragor
+        <br>
+        Ta upp alla delar som åtskiljs av / : och #
+    </p>
+
+    <h3 class="svar">Svar till fråga a. / b. / c.</h3>
+    <p class="a">a. En klient och server kommunicerar med varandra och gör det möjligt att använda internet. Detta går
+        till genom att klienten skickar en begäran till en server där servern sedan skickar ett svar som gör det sedan
+        möjligt att få en anslutning mellan klient och server.
+        En klient begäran kan vara en typ av tjänst, adress till en resurs eller en returadress. Ett svar från servern
+        kan där efter vara ett meddelande eller resurs. En klient kan exempelvis vara ett program, epostklient(mozilla
+        thunderbird, opera mail client...), webbläsare(firefox, google chrome, opera gx, microsoft edge...),
+        ftp-program(filezilla, fireftp...).</p>
+    <p class="a">b. TCP som sändare har som uppgift att dela upp meddelanden i paket, numrerna dem och sedan skicka
+        vidare till IP. TCP som mottagare gör samma sak fast tvärt om och sätter samman paketen till meddelanden och
+        skickar vidare till programet det ska till. <br><br> IP som sändare addresserar med IP-adress. IP som mottagare
+        tar emot paket och skickar vidare till TCP.</p>
+    <p class="a">c. URLen http://webbteknik.abc.se:8082/kurs1/uppg/u1.html#fragor börjar med en tjänst(tjänst
+        protokoll), i detta fall är det http. Efter det kommer domännamn(adress till servern, IP-adress) i detta fall
+        webbteknik.abc.se(.abc.se är själva domänen) efter domänen visas porten vilket är som en ingång för server
+        program, i detta fall :8082. Efter det kommer adressen inom servern vilket är /kurs1/uppg/u1.html#fragor där
+        /kurs1/uppg/ är sökvägen och u1.html är filnamn. #fragor är ett stycke på hemsidan som webbläsaren i detta fall
+        kommer skrolla fram till.
+        <img src="/img/url.png" width="500px" height="500px">
+    </p>
+
+    <div class="bg">
+        <p class="bgtext">Bild bakgrund</p>
+    </div>
+</body>
+
+</html>
